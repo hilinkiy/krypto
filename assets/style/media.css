@@ -1,0 +1,119 @@
+@media (max-width: 1335.99px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .krypto__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .market__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 825.99px) {
+    #chart {
+        max-width: 500px;
+    }
+
+    .chart {
+        width: 100%;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .market__overview {
+        max-width: 500px;
+    }
+
+    .leftside {
+        padding: 10px;
+    }
+
+    .bchain {
+        padding: 20px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .krypto {
+        padding: 20px 0;
+    }
+
+    .market {
+        padding: 0;
+    }
+}
+
+@media (max-width: 595.99px) {
+    .market__overview {
+        display: none;
+    }
+
+    #chart {
+        width: 300px;
+    }
+
+    .chart__btns {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .krypto__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__content {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 525.99px) {
+    .leftside {
+        display: none;
+    }
+
+    .bchain {
+        width: 80%;
+    }
+
+    .side__open {
+        display: none;
+    }
+
+    .nav__title {
+        display: none;
+    }
+
+    #nav {
+        padding: 20px 0;
+    }
+
+    .nav__content {
+        justify-content: center;
+    }
+
+    .nav__right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 330.99px) {
+    #chart {
+        width: 200px;
+    }
+}

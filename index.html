@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div class="site">
+        <div class="leftside">
+            <div class="leftside__content">
+                <a href="#!">
+                    <img src="./assets/img/logo.svg" alt="">
+                </a>
+                <ul class="leftside__list">
+                    <li>
+                        <a href="#!">
+                            <img src="./assets/img/Home.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <img src="./assets/img/Graph.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <img src="./assets/img/Bag 2.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <img src="./assets/img/Setting.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <a href="#!">
+                    <img src="./assets/img/Logout.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="mainside">
+            <nav id="nav">
+                <div class="nav__content">
+                    <a href="#!">
+                        <img src="./assets/img/Search bar.png" alt="" class="side__open">
+                    </a>
+                    <h1 class="nav__title">
+                        {{navTitle}}
+                    </h1>
+                    <div class="nav__right">
+                        <div class="nav__search">
+                            <input type="text" class="nav__input"
+                                :placeholder="placeholder">
+                            <button class="nav__button">
+                                <img src="./assets/img/Union.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="nav__btns">
+                            <a href="#!">
+                                <img src="./assets/img/notification btn.png"
+                                    alt="">
+                            </a>
+                            <a href="#!">
+                                <img src="./assets/img/avatar.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header class="header">
+                <section class="bchain">
+                    <div class="bchain__content">
+                        <h2 class="bchain__subtitle">
+                            ETHEREUM 2.0
+                        </h2>
+                        <h1 class="bchain__title">
+                            Your Gateway into Blockchain
+                        </h1>
+                        <p class="bchain__descr">
+                            Paronia is a blockchain platform. We make blockchain
+                            accessible.
+                        </p>
+                        <a href="#!" class="bchain__btn">
+                            Learn More.
+                        </a>
+                    </div>
+                </section>
+                <section id="chart">
+                    <div class="chart__content">
+                        <div class="chart__btns">
+                            <a href="#!" class="chart__select">
+                                <img src="./assets/img/Frame.svg" alt="">
+                                <span>ETH/USD</span>
+                                <img src="./assets/img/Arrow - Down 2.svg"
+                                    alt="">
+                            </a>
+                            <div class="chart__days">
+                                <a href="#!" class="chart__days-btn">
+                                    {{d}}
+                                </a>
+                                <a href="#!" class="chart__days-btn">
+                                    {{w}}
+                                </a>
+                                <a href="#!" class="chart__days-btn">
+                                    {{m}}
+                                </a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/chart.png" alt="" class="chart">
+                    </div>
+                </section>
+            </header>
+            <main class="main">
+                <section class="krypto">
+                    <div class="krypto__content">
+                        <div class="krypto__card">
+                            <img src="./assets/img/icon.png" alt=""
+                                class="coin">
+                            <div class="krypto__text">
+                                <a href="#!" class="krypto__change">
+                                    <span>BTC</span><img
+                                        src="./assets/img/icon (1).png"
+                                        alt=""><span class="plus">USD</span>
+                                </a>
+                                <p class="krypto__profit">
+                                    <img src="./assets/img/Frame 1318.png"
+                                        alt=""> <span class="plus">6.2%</span>
+                                </p>
+                            </div>
+                            <p class="krypto__counter">
+                                8442.55
+                            </p>
+                            <img src="./assets/img/graph.png" alt="">
+                        </div>
+                        <div class="krypto__card">
+                            <img src="./assets/img/eth.png" alt="" class="coin">
+                            <div class="krypto__text">
+                                <a href="#!" class="krypto__change">
+                                    <span>ETH</span><img
+                                        src="./assets/img/icon (1).png"
+                                        alt=""><span>USD</span>
+                                </a>
+                                <p class="krypto__profit">
+                                    <img src="./assets/img/minus.png" alt="">
+                                    <span class="minus">6.2%</span>
+                                </p>
+                            </div>
+                            <p class="krypto__counter">
+                                4772.18
+                            </p>
+                            <img src="./assets/img/graph eth.png" alt="">
+                        </div>
+                        <div class="krypto__card">
+                            <img src="./assets/img/ltc.svg" alt="" class="coin">
+                            <div class="krypto__text">
+                                <a href="#!" class="krypto__change">
+                                    <span>LTC</span><img
+                                        src="./assets/img/icon (1).png"
+                                        alt=""><span>USD</span>
+                                </a>
+                                <p class="krypto__profit">
+                                    <img src="./assets/img/Frame 1318.png"
+                                        alt="">
+                                    <span class="plus">6.2%</span>
+                                </p>
+                            </div>
+                            <p class="krypto__counter">
+                                3612.65
+                            </p>
+                            <img src="./assets/img/graph ltc.svg" alt="">
+                        </div>
+                        <div class="krypto__card">
+                            <img src="./assets/img/eth.png" alt="" class="coin">
+                            <div class="krypto__text">
+                                <a href="#!" class="krypto__change">
+                                    <span>ETH</span><img
+                                        src="./assets/img/icon (1).png"
+                                        alt=""><span>USD</span>
+                                </a>
+                                <p class="krypto__profit">
+                                    <img src="./assets/img/minus.png" alt="">
+                                    <span class="minus">6.2%</span>
+                                </p>
+                            </div>
+                            <p class="krypto__counter">
+                                4772.18
+                            </p>
+                            <img src="./assets/img/graph eth.png" alt="">
+                        </div>
+                        <div class="krypto__card">
+                            <img src="./assets/img/icon.png" alt=""
+                                class="coin">
+                            <div class="krypto__text">
+                                <a href="#!" class="krypto__change">
+                                    <span>BTC</span><img
+                                        src="./assets/img/icon (1).png"
+                                        alt=""><span>USD</span>
+                                </a>
+                                <p class="krypto__profit">
+                                    <img src="./assets/img/Frame 1318.png"
+                                        alt=""> <span class="plus">6.2%</span>
+                                </p>
+                            </div>
+                            <p class="krypto__counter">
+                                8442.55
+                            </p>
+                            <img src="./assets/img/graph.png" alt="">
+                        </div>
+                        <a href="#!">
+                            <img src="./assets/img/back arrow.png" alt=""
+                                class="back">
+                        </a>
+                    </div>
+                </section>
+                <section class="market">
+                    <div class="market__content">
+                        <div class="market__overview">
+                            <div class="market__text">
+                                <h3 class="market__title">
+                                    Market Overview
+                                </h3>
+                                <a href="#!" class="market__select">
+                                    <span>Monthly</span> <img
+                                        src="./assets/img/Arrow - Down 2.svg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <img src="./assets/img/market chart.png" alt="">
+                        </div>
+                        <div class="market__transfer">
+                            <h3 class="transfer__title">
+                                Quick Transfer
+                            </h3>
+                            <div class="transfer__users">
+                                <img src="./assets/img/character.png" alt="">
+                                <img src="./assets/img/Character=Ezra, Skin tone=White, Posture=1 Happy.png"
+                                    alt="">
+                                <a href="#!">
+                                    <img src="./assets/img/add btn.png" alt="">
+                                </a>
+                            </div>
+                            <p class="transfer__amount">
+                                Amount: $<span>3.25</span>
+                            </p>
+                            <a href="#!" class="transfer__btn">
+                                <img src="./assets/img/Send.png" alt="">
+                                <span>Transfer Now</span>
+                            </a>
+                        </div>
+                        <div class="market__trend">
+                            <h4 class="trend__title">
+                                Market Trend
+                            </h4>
+                            <div class="trend__cols">
+                                <div class="trend__col">
+                                    <p class="trend__col-title">
+                                        Name
+                                    </p>
+                                    <ul class="trend__list">
+                                        <li class="trend__list-link">
+                                            <span>BTC</span> Bitcoin
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>BNB</span> BNB
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>ETH</span> Ethereum
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>LTC</span> Litecoin
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>ADA</span> Cardano
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>CAKE</span> Pancake
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="trend__col">
+                                    <p class="trend__col-title">
+                                        Last Price
+                                    </p>
+                                    <ul class="trend__list">
+                                        <li class="trend__list-link">
+                                            $8594
+                                        </li>
+                                        <li class="trend__list-link">
+                                            $57207
+                                        </li>
+                                        <li class="trend__list-link">
+                                            $71129
+                                        </li>
+                                        <li class="trend__list-link">
+                                            $18661
+                                        </li>
+                                        <li class="trend__list-link">
+                                            $37166
+                                        </li>
+                                        <li class="trend__list-link">
+                                            $72650
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="trend__col">
+                                    <p class="trend__col-title">
+                                        24h Change
+                                    </p>
+                                    <ul class="trend__list">
+                                        <li class="trend__list-link">
+                                            <span>2,540</span> <img
+                                                src="./assets/img/Arrow up.png"
+                                                alt="">
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>2,304</span> <img
+                                                src="./assets/img/down.png"
+                                                alt="">
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>1,320</span> <img
+                                                src="./assets/img/down.png"
+                                                alt="">
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>2,140</span> <img
+                                                src="./assets/img/Arrow up.png"
+                                                alt="">
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>1,976</span> <img
+                                                src="./assets/img/Arrow up.png"
+                                                alt="">
+                                        </li>
+                                        <li class="trend__list-link">
+                                            <span>1,903</span> <img
+                                                src="./assets/img/down.png"
+                                                alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
